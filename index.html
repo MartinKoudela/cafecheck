@@ -7,16 +7,59 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cafecheck</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 <body>
-<nav class="navbar">
+<nav class="navbar navbar-expand-lg py-2" style="background-color: #70573b;">
     <div class="container">
-        <div class="navbar-header">
-            <a href="index.html" class="navbar-brand">CAFECHECK</a>
+        <a href="index.html" class="navbar-brand fs-1" style="font-family: Impact; color: #ccad8f">CAFECHECK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto gap-5 fs-4" style="font-family: Impact; color: #ccad8f">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link custom-border" style="color: #ccad8f">DOMŮ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link custom-border" style="color: #ccad8f">O MNĚ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link custom-border" style="color: #ccad8f">KONTAKTY</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link custom-border" style="color: #ccad8f">KAVÁRNY</a>
+                </li>
+
+            </ul>
         </div>
     </div>
-
 </nav>
 
+<section class="mt-5">
+    <div class="container d-flex justify-content-center align-items-center pt-5">
+        <div class="column">
+            <h2 class="display-5 fw-bold mt-5" style="font-family: Noteworthy; color: #2d261f">Vítejte u</h2>
+            <h1 class="display-1 di fw-bolder mt-5" style="font-family: Helvetica Neue; color: #543d24">RECENZE KAVÁREN</h1>
+            <p class="fs-1 fw-bold mt-4" style="font-family: Helvetica Neue; color: #2d261f">ZLÍN A OKOLÍ</p>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    @media (max-width: 991px) {
+        .custom-border {
+            border-bottom: 2px solid black;
+        }
+    }
+</style>
+<script src=js/bootstrap.bundle.js></script>
 </body>
 </html>
