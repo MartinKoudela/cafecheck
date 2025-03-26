@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="cz">
+<html lang="cz" xmlns:color="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -30,11 +30,15 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link custom-border" style="color: #ccad8f">KAVÁRNY</a>
+                    <a href="#cafes" class="nav-link custom-border" style="color: #ccad8f">KAVÁRNY</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link custom-border" style="color: #ccad8f">O MNĚ</a>
+                    <a href="#about_me" class="nav-link custom-border" style="color: #ccad8f">O MNĚ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link custom-border" style="color: #ccad8f">MÁ GALERIE</a>
                 </li>
 
             </ul>
@@ -68,53 +72,135 @@
 </section>
 
 <section class="d-flex d-flex align-items-start justify-content-center text-center" id="o_webu"
-         style="height: 100vh;background-color: #ccad8f;">
+         style="height: 60vh;background-color: #ccad8f;">
     <div class="container">
         <div class="row mt-5">
-            <h1 class="display-1 fw-bold pt-5 mb-5" style="font-family: Impact; color: #2d261f">
+            <h1 class="display-1 fw-bold mb-5 mt-5" style="font-family: Impact; color: #2d261f">
                 O webu
             </h1>
-            <p class="fs-3 fw-bold mt-5" style="font-family: Helvetica Neue; color: #2d261f;">
-                Web je založen na mých zkušenostech a názorech, takže zde najdete upřímné postřehy, autentická
+            <p class="fs-3 mt-5" style="font-family: Helvetica Neue; color: #2d261f;">
+                - Web je založen na mých zkušenostech a názorech, takže zde najdete upřímné postřehy, autentická
                 doporučení a mé pohledy na různá témata.
             </p>
         </div>
     </div>
 </section>
 
-<section class="text-center" style="background-color: #ccad8f;">
+<section class="text-center" id="cafes" style="background-color: #ccad8f;">
     <div class="container">
         <div class="row">
-            <h1 class="display-1" style="font-family: Impact; color: #2d261f;">Kavárny</h1>
+            <h1 class="display-3 mb-5" style="font-family: Impact; color: #2d261f;">Mnou hodnocené kavárny</h1>
 
-            <div id="kavarnaCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="cafeCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div style="background-color: #70573b;">
-                            <a href="prostor">
-                                <img src="imgs/prostor.jpg" class="d-block w-50 mx-auto" alt="Kavárna Prostor">
-                            </a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="display-3">Kavárna - Prostor</h5>
-                                <p class="fs-3">Slavičín</p>
-                            </div>
+                        <a href="prostor">
+                            <img src="imgs/prostor.jpg" class="d-block w-50 mx-auto" alt="Kavárna - Prostor">
+                        </a>
+                        <div class="carousel-caption d-block pt-sm-5 ">
+                            <h5 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-4 py-2 pb-5">
+                                Prostor</h5>
+                            <p class="text-white fs-4 fs-md-2 fs-lg-1">Slavičín</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a>
+                            <img src="imgs/laskavarna.jpg" class="d-block w-50 mx-auto" alt="Kavárna - Láskavarna">
+                        </a>
+                        <div class="carousel-caption d-block pt-sm-5">
+                            <h5 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-4 py-2 pb-5">
+                                Láskavarna</h5>
+                            <p class="text-white fs-4 fs-md-2 fs-lg-1">Zlín - ul. Pod Kaštany</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a>
+                            <img src="imgs/kavarna_tovarna.jpg" class="d-block w-50 mx-auto"
+                                 alt="Kavárna - Kavárna Továrna">
+                        </a>
+                        <div class="carousel-caption d-block pt-sm-5">
+                            <h5 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-4 py-2 pb-5">
+                                Kavárna Továrna</h5>
+                            <p class="text-white fs-4 fs-md-2 fs-lg-1">Zlín - ul. Vavrečkova</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a>
+                            <img src="imgs/kafe-narohu 2.jpg" class="d-block w-50 mx-auto" alt="Kavárna - Kafe na rohu">
+                        </a>
+                        <div class="carousel-caption d-block pt-sm-5">
+                            <h5 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-4 py-2 pb-5">
+                                Kafe na rohu</h5>
+                            <p class="text-white fs-4 fs-md-2 fs-lg-1">Zlín - Náměstí Práce</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a>
+                            <img src="imgs/kafö.jpg" class="d-block w-50 mx-auto" alt="Kavárna - Kafö">
+                        </a>
+                        <div class="carousel-caption d-block pt-sm-5">
+                            <h5 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-5 py-2 pb-5">
+                                Kafö</h5>
+                            <p class="v fs-4 fs-md-2 fs-lg-1">Zlín - ul. Potoky</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a>
+                            <img src="imgs/park_café.jpg" class="d-block w-50 mx-auto" alt="Kavárna - Park Café">
+                        </a>
+                        <div class="carousel-caption d-block pt-sm-5">
+                            <h2 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-4 py-2 pb-5">
+                                Park Café</h2>
+                            <p class="text-white fs-4 fs-md-2 fs-lg-1">Zlín - </p>
                         </div>
                     </div>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#kavarnaCarousel"
+                <button class="carousel-control-prev" type="button" data-bs-target="#cafeCarousel"
                         data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden">Předešlé</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#kavarnaCarousel"
+                <button class="carousel-control-next" type="button" data-bs-target="#cafeCarousel"
                         data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden">Další</span>
                 </button>
+            </div>
+            <div class="row mt-3 justify-content-center">
+                <div class="col-auto">
+                    <img src="imgs/prostor.jpg" class="thumbnail-img" data-bs-target="#cafeCarousel"
+                         data-bs-slide-to="0">
+                </div>
+                <div class="col-auto">
+                    <img src="imgs/laskavarna.jpg" class="thumbnail-img" data-bs-target="#cafeCarousel"
+                         data-bs-slide-to="1">
+                </div>
+                <div class="col-auto">
+                    <img src="imgs/kavarna_tovarna.jpg" class="thumbnail-img" data-bs-target="#cafeCarousel"
+                         data-bs-slide-to="2">
+                </div>
+                <div class="col-auto">
+                    <img src="imgs/kafe-narohu 2.jpg" class="thumbnail-img" data-bs-target="#cafeCarousel"
+                         data-bs-slide-to="3">
+                </div>
+                <div class="col-auto">
+                    <img src="imgs/kafö.jpg" class="thumbnail-img" data-bs-target="#cafeCarousel" data-bs-slide-to="4">
+                </div>
+                <div class="col-auto">
+                    <img src="imgs/park_café.jpg" class="thumbnail-img" data-bs-target="#cafeCarousel"
+                         data-bs-slide-to="5">
+                </div>
             </div>
         </div>
     </div>
+</section>
+<section class="text-center" style="background-color: #ccad8f; height: 70vh;">
+
 </section>
 
 
@@ -152,6 +238,23 @@
         right: 10%;
         width: 8%;
     }
+
+    .thumbnail-img {
+        width: 80px;
+        height: 60px;
+        object-fit: cover;
+        cursor: pointer;
+        opacity: 0.6;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 5px;
+    }
+
+    .thumbnail-img:hover, .thumbnail-img:focus {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+
 </style>
 
 <script src=js/bootstrap.bundle.js>
