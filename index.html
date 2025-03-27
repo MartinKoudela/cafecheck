@@ -14,7 +14,7 @@
 <nav class="navbar navbar-expand-lg py-2 fixed-top" style="background-color: #70573b;">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="imgs/bean.png" alt="coffee bean logo" width="50" height="50">
+            <img src="imgs/bean.png" class="img-fluid" alt="coffee bean logo" width="50" height="50">
         </a>
         <a href="index.html" class="navbar-brand fs-1" style="font-family: Impact; color: #ccad8f">CAFECHECK</a>
 
@@ -49,8 +49,8 @@
     </div>
 </nav>
 
-<section id="landing" class="d-flex text-center align-items-end justify-content-center"
-         style="height: 50vh; background-color: #ccad8f;">
+<section id="landing" class="d-flex text-center align-items-center justify-content-center"
+         style="background-color: #ccad8f; height: 75vh;">
     <div class="container">
         <div class="col">
             <h2 class="display-5 fw-bold" style="font-family: Noteworthy; color: #2d261f">
@@ -66,8 +66,8 @@
     </div>
 </section>
 
-<section style="background-color: #ccad8f; height: 70vh;" class="d-flex align-items-end justify-content-end">
-    <img src="imgs/coffee.png" class="img-fluid" alt="Responsive image">
+<section style="background-color: #ccad8f;" class="d-flex align-items-end justify-content-end">
+    <img src="imgs/coffe_drop.png" class="img-fluid mb-5" alt="Responsive image">
 </section>
 
 <section class="container-fluid p-0" style="background-color: #ccad8f;">
@@ -75,7 +75,7 @@
 </section>
 
 <section class="d-flex d-flex align-items-start justify-content-center text-center" id="o_webu"
-         style="height: 60vh;background-color: #ccad8f;">
+         style="background-color: #ccad8f;">
     <div class="container">
         <div class="row">
             <h1 class="display-1 fw-bold mb-5 mt-5" style="font-family: Impact; color: #2d261f">
@@ -86,6 +86,7 @@
                 doporučení a mé pohledy na různá témata.
             </p>
         </div>
+        <img src="imgs/coffee.png" class="img-fluid" alt="Responsive image">
     </div>
 </section>
 
@@ -145,7 +146,7 @@
                             <img src="imgs/kafö.jpg" class="d-block w-50 mx-auto" alt="Kavárna - Kafö">
                         </a>
                         <div class="carousel-caption d-block pt-sm-5">
-                            <h5 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-5 py-2 pb-5">
+                            <h5 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-4 py-2 pb-5">
                                 Kafö</h5>
                             <p class="v fs-4 fs-md-2 fs-lg-1">Zlín - ul. Potoky</p>
                         </div>
@@ -158,8 +159,32 @@
                         <div class="carousel-caption d-block pt-sm-5">
                             <h2 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-4 py-2 pb-5">
                                 Park Café</h2>
-                            <p class="text-white fs-4 fs-md-2 fs-lg-1">Zlín - </p>
+                            <p class="text-white fs-4 fs-md-2 fs-lg-1">Zlín - ul. Soudní</p>
                         </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <a>
+                        <img src="imgs/nova_lucerna.jpg" class="d-block w-50 mx-auto"
+                             alt="Kavárna - Nová Lucerna">
+                    </a>
+                    <div class="carousel-caption d-block pt-sm-5">
+                        <h5 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-4 py-2 pb-5">
+                            Nová Lucerna</h5>
+                        <p class="text-white fs-4 fs-md-2 fs-lg-1">Bojkovice - Nábřeží T.G.M.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <a>
+                        <img src="imgs/kookie.jpg" class="d-block w-50 mx-auto"
+                             alt="Kavárna - Kookie By Nikol">
+                    </a>
+                    <div class="carousel-caption d-block pt-sm-5">
+                        <h5 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-4 py-2 pb-5">
+                            Kookie By Nikol</h5>
+                        <p class="text-white fs-4 fs-md-2 fs-lg-1">Zlín - ul. Jana Antonína Bati </p>
                     </div>
                 </div>
 
@@ -198,62 +223,110 @@
                     <img src="imgs/park_café.jpg" class="thumbnail-img" data-bs-target="#cafeCarousel"
                          data-bs-slide-to="5">
                 </div>
+                <div class="col-auto">
+                    <img src="imgs/nova_lucerna.jpg" class="thumbnail-img" data-bs-target="#cafeCarousel"
+                         data-bs-slide-to="6">
+                </div>
+                <div class="col-auto">
+                    <img src="imgs/kookie.jpg" class="thumbnail-img" data-bs-target="#cafeCarousel"
+                         data-bs-slide-to="7">
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section class="d-flex d-flex align-items-start justify-content-center text-center" id="about_me"
-         style="height: 100vh; background-color: #ccad8f;">
+
+<section class="d-flex d-flex align-items-start justify-content-center text-center col-sm-12" id="about_me"
+         style="background-color: #ccad8f;">
     <div class="container">
         <div class="row mt-5">
             <h1 class="display-2 fw-bold mb-5 mt-5" style="font-family: Impact; color: #2d261f">
                 O mně
             </h1>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
 
-            <p class="fs-3 mt-5" style="font-family: Helvetica Neue; color: #2d261f;">
-                - Jsem student Strední školy Orbis Zlín obor IT a jako každý správný programátor mám minimum spánku,
+            <p class="fs-4 mt-5" style="font-family: Helvetica Neue; color: #2d261f;">
+                - Jsem student Střední školy Orbis Zlín obor IT a jako každý správný programátor mám minimum spánku,
                 proto jsem si
                 už nějaký ten pátek zamiloval kávu. Už to bylo pár kaváren, které jsem navštívil a pár káv co jsem
                 vypil,
                 proto jsem se rozhodl udělat webovou stránku, což byl i můj projekt do školy.
             </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
 
-            <p class="fs-4 mt-5" style="font-family: Helvetica Neue; color: #2d261f;">
+            <p class="fs-5 mt-5 mb-5" style="font-family: Helvetica Neue; color: #2d261f;">
                 - Nemám rád kyselou ani sladkou kávu, spíše hledám kávu s vyváženou chutí, která má jemné ovocné tóny a
                 výraznou oříškovou nebo karamelovou příchuť. Moje nejoblíbenější káva je překapávaná káva od Láskavarny,
                 která má jedinečnou chuť, na kterou jsem nikde jinde zatím nenarazil. Rád si ale dopřeju i flat white od
                 Kavárny
-                Továrny nebo Kafö. Když spěchám, nikdy neodmítnu espresso od Kafe Na rohu – to je klasika, která mě
+                Továrny nebo od Kafö. Když spěchám, nikdy neodmítnu espresso od Kafe Na rohu – to je klasika, která mě
                 nikdy
-                neomrzí. Je toho tolik, že se v tom někdy ztrácím a vlastně nikdy nevím, kam a na co kdy zajdu. A to mě
+                neomrzí. Je toho tolik, že se v tom někdy ztrácím a vlastně nikdy nevím, kam a na co kdy zajdu. <br>A to
+                mě
                 na tom
                 baví nejvíce.
             </p>
         </div>
     </div>
 </section>
-<footer class="py-3 text-center text-white" style="background-color: #70573b;">
-    <p>&copy; 2025 all right reserved by Martin Koudela</p>
+
+
+<section class="vh-100" style="background-color: #ccad8f;">
+    <div class="container">
+        <div class="row">
+            <h1 class="mb-1" style="font-family: Impact; color: #2d261f">Vaše zpětná vazba je pro mě důležitá!</h1>
+            <form id="feedbackForm">
+                <div class="mb-3">
+                    <label for="feedback_name" class="form-label">Vaše jméno</label>
+                    <input type="text" class="form-control w-25" id="feedback_name" placeholder="Petr Novák" required
+                           style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
+                </div>
+
+                <div class="mb-3">
+                    <label for="feedback_mail" class="form-label">Váš Email</label>
+                    <input type="email" class="form-control w-50" id="feedback_mail" placeholder="název@příklad.com"
+                           required
+                           style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
+                </div>
+
+                <div class="mb-3">
+                    <label for="feedback">Váše zpětná vazba</label>
+                    <textarea class="form-control w-75" id="feedback" rows="3" placeholder="Zde Vás limity neomezují..."
+                              required
+                              style="background-color: #70573b; border-color: #000000; color: #ccad8f"></textarea>
+                </div>
+                <button type="submit" class="btn mt-2"
+                        style="background-color: #70573b; border-color: #000000; color: #ccad8f;">Odeslat
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="py-3 text-center" style="background-color: #70573b;">
+    <div class="container">
+        <p style="color: #ccad8f"> &copy; 2025 all right reserved by Martin Koudela</p>
+        <h1 class="text-start" style="color: #ccad8f; font-family: Helvetica Neue">Kontakty:</h1>
+        <div class="d-flex flex-direction-row gap-4">
+            <a href="mailto:koudela.m@icloud.com" style="text-decoration: none">
+                <i class="bi bi-envelope-fill d-flex align-items-start justify-content-start display-1 text-decoration-none logo"
+                   style="color: #ccad8f;"></i>
+            </a>
+            <a href="https://www.instagram.com/swa666rrass?igsh=bzJ0Y2F4YzI3cGox&utm_source=qr"
+               style="text-decoration: none">
+                <i class="bi bi-instagram d-flex align-items-start justify-content-start display-1 text-decoration-none logo"
+                   style="color: #ccad8f;"></i>
+            </a>
+        </div>
+
+    </div>
+
 </footer>
 
 
 <style>
+    body {
+        background-color: #70573b;
+    }
+
     @media (max-width: 991px) {
         .custom-border {
             border-bottom: 2px solid black;
@@ -303,10 +376,69 @@
         transform: scale(1.1);
     }
 
+    .logo:hover {
+        color: #ffcc99 !important;
+    }
+
 
 </style>
 
-<script src=js/bootstrap.bundle.js>
+
+<script type="module" src=js/bootstrap.bundle.js></script>
+<script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore.js"></script>
+<script>
+
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyDzyD7qi4yI0r9MyYB_pA3O-MZcZXYlbO4",
+        authDomain: "cafecheck-b4e73.firebaseapp.com",
+        databaseURL: "https://cafecheck-b4e73-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "cafecheck-b4e73",
+        storageBucket: "cafecheck-b4e73.firebasestorage.app",
+        messagingSenderId: "879583648262",
+        appId: "1:879583648262:web:9fe99d3a476c79f4d5c187",
+        measurementId: "G-LTN7L59CXW"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    // posilani do firestoru
+    document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Zabráníme výchozímu odeslání formuláře
+
+        // ziskane hodnoty
+        const name = document.getElementById("feedback_name").value;
+        const email = document.getElementById("feedback_mail").value;
+        const message = document.getElementById("feedback").value;
+
+        // zpetna vazba
+        firebase.addDoc(firebase.collection(db, "feedback"), {
+            name: name,
+            email: email,
+            message: message,
+            timestamp: firebase.serverTimestamp() // Získáme timestamp (čas odeslání)
+        })
+            .then(() => {
+                alert("Děkujeme za zpětnou vazbu!"); // Upozornění uživatele
+                document.getElementById("feedbackForm").reset(); // Reset formuláře
+            })
+            .catch((error) => {
+                console.error("Chyba při ukládání: ", error); // Chybová hláška v konzoli
+                alert("Nastala chyba při odesílání zpětné vazby.");
+            });
+    });
+
 </script>
 </body>
 </html>
