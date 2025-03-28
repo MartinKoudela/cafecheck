@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kavárny</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body style="background-color: #70573b;">
+<nav class="navbar navbar-expand-lg py-2 fixed-top" style="background-color: #70573b;">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="imgs/bean.png" class="img-fluid" alt="coffee bean logo" width="50" height="50">
+        </a>
+        <a href="index.html" class="navbar-brand fs-1" style="font-family: Impact; color: #ccad8f">CAFECHECK</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto gap-5 fs-4" style="font-family: Impact; color: #ccad8f">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link custom-border" style="color: #ccad8f">DOMŮ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#o_webu" class="nav-link custom-border" style="color: #ccad8f">O WEBU</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="cafes.html" class="nav-link custom-border" style="color: #ccad8f">KAVÁRNY</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#about_me" class="nav-link custom-border" style="color: #ccad8f">O MNĚ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link custom-border" style="color: #ccad8f">MÁ GALERIE</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="mt-5" style="background-color: #ccad8f; height: 100vh; width: 100vw;">
+    <div class="container">
+        <div class="row">
+            <div class="text-center row">
+                <h1 class="mt-5 pt-5 display-1" style="font-family: Impact ; color: #2d261f ">Kavárny</h1>
+                <p class="fw-bold display-5" style="font-family: Noteworthy; color: #2d261f ">Vyberte podle města.</p>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-5 mx-auto">
+                <div class="card" style="width: 300px; background-color: #70573b; border-color: #000000;">
+                    <a href="zlin.html" class="text-decoration-none">
+                        <img src="imgs/zlín.jpg" class="card-img-top" alt="Zlín">
+                        <div class="card-body">
+                            <h5 class="card-title" style=" color: #ccad8f;">Zlín</h5>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-5 mx-auto">
+                <div class="card" style="width: 300px; background-color: #70573b; border-color: #000000;">
+                    <a href="slavi.html" class="text-decoration-none">
+                        <img src="imgs/slavicin.jpg" class="card-img-top" alt="Slavičín">
+                        <div class="card-body">
+                            <h5 class="card-title" style=" color: #ccad8f;">Slavičín</h5>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-md-6 col-lg-4 mt-5 mx-auto">
+                <div class="card" style="width: 300px; background-color: #70573b; border-color: #000000; color: #ccad8f;">
+                    <a href="bojko.html" class="text-decoration-none">
+                        <img src="imgs/bojko.jpg" class="card-img-top" alt="Bojkovice">
+                        <div class="card-body">
+                            <h5 class="card-title" style=" color: #ccad8f;">Bojkovice</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-3 text-center" style="background-color: #70573b;">
+    <div class="container">
+        <p style="color: #ccad8f"> &copy; 2025 all right reserved by Martin Koudela</p>
+        <h3 class="text-start" style="color: #ccad8f; font-family: Helvetica Neue">Kontakty:</h3>
+        <div class="d-flex flex-direction-row gap-4">
+            <a href="mailto:koudela.m@icloud.com" style="text-decoration: none">
+                <i class="bi bi-envelope-fill d-flex align-items-start justify-content-start display-1 text-decoration-none logo"
+                   style="color: #ccad8f;"></i>
+            </a>
+            <a href="https://www.instagram.com/swa666rrass?igsh=bzJ0Y2F4YzI3cGox&utm_source=qr"
+               style="text-decoration: none">
+                <i class="bi bi-instagram d-flex align-items-start justify-content-start display-1 text-decoration-none logo"
+                   style="color: #ccad8f;"></i>
+            </a>
+        </div>
+
+    </div>
+
+</footer>
+
+<style>
+    @media (max-width: 991px) {
+        .custom-border {
+            border-bottom: 2px solid black;
+        }
+    }
+
+    .nav-link:hover {
+        color: #ffcc99 !important;
+        text-decoration: underline;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.3);
+    }
+
+    .nav-link:hover {
+        color: #ffcc99 !important;
+        text-decoration: underline;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .logo:hover {
+        color: #ffcc99 !important;
+    }
+</style>
+
+<script type="module" src=js/bootstrap.bundle.js></script>
+</body>
+</html>

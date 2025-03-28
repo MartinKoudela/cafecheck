@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
-<body>
+<body style="background-color: #70573b;">
 <nav class="navbar navbar-expand-lg py-2 fixed-top" style="background-color: #70573b;">
     <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -33,7 +33,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#cafes" class="nav-link custom-border" style="color: #ccad8f">KAVÁRNY</a>
+                    <a href="cafes.html" class="nav-link custom-border" style="color: #ccad8f">KAVÁRNY</a>
                 </li>
 
                 <li class="nav-item">
@@ -41,7 +41,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#gallery" class="nav-link custom-border" style="color: #ccad8f">MÁ GALERIE</a>
+                    <a href="gallery.html" class="nav-link custom-border" style="color: #ccad8f">MÁ GALERIE</a>
                 </li>
 
             </ul>
@@ -85,8 +85,11 @@
                 - Web je založen na mých zkušenostech a názorech, takže zde najdete upřímné postřehy, autentická
                 doporučení a mé pohledy na různá témata.
             </p>
+            <p class="fs-3" style="font-family: Helvetica Neue; color: #2d261f;">
+                - Časem zde budou přibývat nové a nové kavárny.
+            </p>
         </div>
-        <img src="imgs/coffee.png" class="img-fluid" alt="Responsive image">
+        <img src="imgs/img_prek.png" height="300" width="582" alt="V60" class="img-fluid d-flex mb-5 float-start">
     </div>
 </section>
 
@@ -104,7 +107,7 @@
                         <div class="carousel-caption d-block pt-sm-5 ">
                             <h5 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-4 py-2 pb-5">
                                 Prostor</h5>
-                            <p class="text-white fs-4 fs-md-2 fs-lg-1">Slavičín</p>
+                            <p class="text-white fs-4 fs-md-2 fs-lg-1">Slavičín - nám. Mezi Šenky</p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -158,8 +161,8 @@
                             <img src="imgs/park_café.jpg" class="d-block w-50 mx-auto" alt="Kavárna - Park Café">
                         </a>
                         <div class="carousel-caption d-block pt-sm-5">
-                            <h2 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-4 py-2 pb-5">
-                                Park Café</h2>
+                            <h5 class="text-white fw-medium fs-1 fs-md-3 fs-lg-5 fw-bold shadow-lg rounded-5 d-inline px-4 py-2 pb-5">
+                                Park Café</h5>
                             <p class="text-white fs-4 fs-md-2 fs-lg-1">Zlín - ul. Soudní</p>
                         </div>
                     </div>
@@ -237,11 +240,11 @@
     </div>
 </section>
 
-<section class="d-flex d-flex align-items-start justify-content-center text-center col-sm-12" id="about_me"
+<section class="d-flex d-flex align-items-start justify-content-center text-center" id="about_me"
          style="background-color: #ccad8f;">
-    <div class="container">
+    <div class="container py-5 text-center">
         <div class="row mt-5">
-            <h1 class="display-2 fw-bold mb-5 mt-5" style="font-family: Impact; color: #2d261f">
+            <h1 class="display-2 fw-bold mt-5" style="font-family: Impact; color: #2d261f">
                 O mně
             </h1>
 
@@ -253,7 +256,7 @@
                 proto jsem se rozhodl udělat webovou stránku, což byl i můj projekt do školy.
             </p>
 
-            <p class="fs-5 mt-5 mb-5" style="font-family: Helvetica Neue; color: #2d261f;">
+            <p class="fs-4 mt-5 mb-5" style="font-family: Helvetica Neue; color: #2d261f;">
                 - Nemám rád kyselou ani sladkou kávu, spíše hledám kávu s vyváženou chutí, která má jemné ovocné tóny a
                 výraznou oříškovou nebo karamelovou příchuť. Moje nejoblíbenější káva je překapávaná káva V60 od
                 Láskavarny,
@@ -270,11 +273,13 @@
     </div>
 </section>
 
-<section style="background-color: #ccad8f;">
+<section class="" style="background-color: #ccad8f;">
     <div class="container">
-        <h1 style="font-family: Impact; color: #2d261f;">Otázky, které by Vás mohli zajímat</h1>
-        <div class="accordion" id="accordionFAQ">
-            <div class="accordion-item  w-50" style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
+        <h1 class="text-center mb-5" style="font-family: Impact; color: #2d261f;">Otázky, které by Vás mohli
+            zajímat</h1>
+        <div class="accordion d-block mt-5" id="accordionFAQ">
+            <div class="accordion-item  w-75 mx-auto"
+                 style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
@@ -295,7 +300,8 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item w-50" style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
+            <div class="accordion-item w-75 mx-auto"
+                 style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
@@ -309,8 +315,8 @@
                         <strong>Filtrované kávy jse můžou zdát podobné, ale vždy je mezi nimi zásadní rozdíl.</strong>
                         Filtrovaná káva je jemnější a čistší než espresso, ale i mezi filtry existují rozdíly. Batch
                         brew
-                        (překapavána káva automatickým kávovarem) je metoda, která zajistí konzistentní chuť bez námahy.
-                        V60 a Chemex (ruční příprava překapaváných káv) Vás odmění lehkou a ovocnou chutí. Naopak
+                        (překapávaná káva automatickým kávovarem) je metoda, která zajistí konzistentní chuť bez námahy.
+                        V60 a Chemex (ruční příprava překapávaných káv) vás odmění lehkou a ovocnou chutí. Naopak
                         French press dodá plnější tělo a více olejů, zatímco AeroPress kombinuje tlak a filtraci
                         pro intenzivnější chuťový zážitek. Pokud máte rádi kávu studenou, Cold brew se luhuje dlouhé
                         hodiny, díky čemuž je sladší a méně kyselé. Ať už preferujete jemnost, sílu nebo osvěžení, každá
@@ -318,7 +324,8 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item w-50" style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
+            <div class="accordion-item w-75 mx-auto"
+                 style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
@@ -336,13 +343,17 @@
         </div>
     </div>
 </section>
+<section id="img" Style="background-color: #ccad8f; height: 50vh;">
+    <img src="imgs/coffee.png" class="img-fluid float-end mt-5" alt="Responsive image">
+</section>
 
-<section style="background-color: #ccad8f;">
+<section class="" style="background-color: #ccad8f; height: 80vh;">
     <div class="container">
         <div class="row">
-            <h1 class="mb-1" style="font-family: Impact; color: #2d261f">Chcete mi doporučit kavárnu a nebo zaslat zpětnou vazbu?</h1>
-            <h3>Vyplňtě formulář a třeba vám vaše přání splním</h3>
-            <form id="feedbackForm">
+            <h1 class="mb-1" style="font-family: Impact; color: #2d261f">Chcete mi doporučit kavárnu a nebo zaslat
+                zpětnou vazbu?</h1>
+            <h3>Vyplňtě formulář a třeba vám vaše přání splním.</h3>
+            <form id="feedbackForm" class="mt-5" action="#" method="POST">
                 <div class="mb-3">
                     <label for="feedback_name" class="form-label">Vaše jméno</label>
                     <input type="text" class="form-control w-25" id="feedback_name" placeholder="Petr Novák" required
@@ -374,7 +385,7 @@
 <footer class="py-3 text-center" style="background-color: #70573b;">
     <div class="container">
         <p style="color: #ccad8f"> &copy; 2025 all right reserved by Martin Koudela</p>
-        <h1 class="text-start" style="color: #ccad8f; font-family: Helvetica Neue">Kontakty:</h1>
+        <h3 class="text-start" style="color: #ccad8f; font-family: Helvetica Neue">Kontakty:</h3>
         <div class="d-flex flex-direction-row gap-4">
             <a href="mailto:koudela.m@icloud.com" style="text-decoration: none">
                 <i class="bi bi-envelope-fill d-flex align-items-start justify-content-start display-1 text-decoration-none logo"
@@ -393,9 +404,6 @@
 
 
 <style>
-    body {
-        background-color: #70573b;
-    }
 
     @media (max-width: 991px) {
         .custom-border {
