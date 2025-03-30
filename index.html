@@ -49,8 +49,8 @@
     </div>
 </nav>
 
-<section id="landing" class="d-flex text-center align-items-center justify-content-center"
-         style="background-color: #ccad8f; height: 75vh;">
+<section id="landing" class="d-flex text-center align-items-end justify-content-center"
+         style="background-color: #ccad8f; height: 50vh;">
     <div class="container">
         <div class="col">
             <h2 class="display-5 fw-bold" style="font-family: Noteworthy; color: #2d261f">
@@ -59,19 +59,24 @@
             <h1 class="display-1 fw-bolder" style="font-family: Helvetica Neue; color: #543d24">
                 RECENZE KAVÁREN
             </h1>
-            <h3 class="display-5 fw-bold" style="font-family: Helvetica Neue; color: #2d261f">
+            <h3 class="display-5 fw-bold mb-5" style="font-family: Helvetica Neue; color: #2d261f">
                 ZLÍN A OKOLÍ
             </h3>
         </div>
     </div>
 </section>
 
-<section style="background-color: #ccad8f;" class="d-flex align-items-end justify-content-end">
-    <img src="imgs/coffe_drop.png" class="img-fluid mb-5" alt="Responsive image">
+<section style="background-color: #ccad8f; height: 50vh;">
+    <div class="d-flex justify-content-between align-items-end h-100">
+        <img src="imgs/beans_drop2.png" class="img-fluid" alt="Responsive image">
+        <img src="imgs/coffe_drop.png" class="img-fluid" alt="Responsive image">
+    </div>
 </section>
 
+
 <section class="container-fluid p-0" style="background-color: #ccad8f;">
-    <img src="imgs/Artboard 2.png" class="img-fluid w-100 vh-100 object-fit-cover" alt="Responsive image">
+    <img src="imgs/Artboard 2.png" id="scroll_animation" class="img-fluid w-100 vh-100 object-fit-cover"
+         alt="Responsive image">
 </section>
 
 <section class="d-flex d-flex align-items-start justify-content-center text-center" id="o_webu"
@@ -89,7 +94,7 @@
                 - Časem zde budou přibývat nové a nové kavárny.
             </p>
         </div>
-        <img src="imgs/img_prek.png" height="300" width="582" alt="V60" class="img-fluid d-flex mb-5 float-start">
+        <img src="imgs/img_prek.png" height="300" width="582" alt="V60" class="img-fluid d-flex mb-5 float-start" id="img_prek">
     </div>
 </section>
 
@@ -347,24 +352,27 @@
     <img src="imgs/coffee.png" class="img-fluid float-end mt-5" alt="Responsive image">
 </section>
 
-<section class="" style="background-color: #ccad8f; height: 80vh;">
+<section style="background-color: #ccad8f;">
     <div class="container">
         <div class="row">
             <h1 class="mb-1" style="font-family: Impact; color: #2d261f">Chcete mi doporučit kavárnu a nebo zaslat
                 zpětnou vazbu?</h1>
             <h3>Vyplňtě formulář a třeba vám vaše přání splním.</h3>
             <form id="feedbackForm" class="mt-5" action="#" method="POST">
-                <div class="mb-3">
-                    <label for="feedback_name" class="form-label">Vaše jméno</label>
-                    <input type="text" class="form-control w-25" id="feedback_name" placeholder="Petr Novák" required
-                           style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
-                </div>
+                <div class="d-flex flex-row">
+                    <div class="mb-3">
+                        <label for="feedback_name" class="form-label">Vaše jméno</label>
+                        <input type="text" class="form-control " id="feedback_name" placeholder="Petr Novák"
+                               required
+                               style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
+                    </div>
 
-                <div class="mb-3">
-                    <label for="feedback_mail" class="form-label">Váš Email</label>
-                    <input type="email" class="form-control w-50" id="feedback_mail" placeholder="název@příklad.com"
-                           required
-                           style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
+                    <div class="mb-3 mx-5">
+                        <label for="feedback_mail" class="form-label">Váš Email</label>
+                        <input type="email" class="form-control " id="feedback_mail" placeholder="název@příklad.com"
+                               required
+                               style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
+                    </div>
                 </div>
 
                 <div class="mb-3">
@@ -379,6 +387,10 @@
             </form>
         </div>
     </div>
+</section>
+
+<section class="d-flex justify-content-end align-items-end" style="background-color: #ccad8f;">
+        <img src="imgs/beans_drop3.png" class="img-fluid" alt="Responsive image">
 </section>
 
 
@@ -457,12 +469,12 @@
     .logo:hover {
         color: #ffcc99 !important;
     }
-
-
 </style>
 
 
 <script type="module" src=js/bootstrap.bundle.js></script>
+
+<!--
 <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-analytics.js"></script>
 <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore.js"></script>
@@ -518,5 +530,6 @@
     });
 
 </script>
+-->
 </body>
 </html>
