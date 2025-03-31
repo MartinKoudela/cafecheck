@@ -79,11 +79,11 @@
          alt="Responsive image">
 </section>
 
-<section class="d-flex d-flex align-items-start justify-content-center text-center" id="o_webu"
-         style="background-color: #ccad8f;">
+<section class="d-flex d-flex align-items-start justify-content-center text-center"
+         style="background-color: #ccad8f;" id="o_webu">
     <div class="container">
         <div class="row">
-            <h1 class="display-1 fw-bold mb-5 mt-5" style="font-family: Impact; color: #2d261f">
+            <h1 class="display-1 fw-bold mt-5 mb-5 pt-5" style="font-family: Impact; color: #2d261f">
                 O webu
             </h1>
             <p class="fs-3" style="font-family: Helvetica Neue; color: #2d261f;">
@@ -187,7 +187,7 @@
 
                     <div class="carousel-item">
                         <a>
-                            <img src="imgs/kookie.jpg" class="d-block w-50 mx-auto"
+                            <img src="imgs/kookie.jpeg" class="d-block w-50 mx-auto"
                                  alt="Kavárna - Kookie By Nikol">
                         </a>
                         <div class="carousel-caption d-block pt-sm-5">
@@ -262,7 +262,7 @@
                          data-bs-slide-to="6">
                 </div>
                 <div class="col-auto">
-                    <img src="imgs/kookie.jpg" class="thumbnail-img" data-bs-target="#cafeCarousel"
+                    <img src="imgs/kookie.jpeg" class="thumbnail-img" data-bs-target="#cafeCarousel"
                          data-bs-slide-to="7">
                 </div>
                 <div class="col-auto">
@@ -449,7 +449,7 @@
 
 
 <style>
-
+    /* Border in hamburger menu */
     @media (max-width: 991px) {
         .custom-border {
             border-bottom: 2px solid black;
@@ -462,11 +462,15 @@
         transition: color 0.3s ease-in-out;
     }
 
+    /* Carousel slider arrow size */
+
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
         width: 70px;
         height: 70px;
     }
+
+    /* Carousel slider arrows gap */
 
     .carousel-control-prev,
     .carousel-control-next {
@@ -499,70 +503,65 @@
         transform: scale(1.1);
     }
 
+    /* Contacts in footer hover for logos insta + mail */
     .logo:hover {
         color: #ffcc99 !important;
     }
 </style>
 
-
 <script type="module" src=js/bootstrap.bundle.js></script>
 
-<!--
-<script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore.js"></script>
+<!-- novejsi verze ktera mně nefunguje -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+
+<!-- starsi verze -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script> <!-- nacte fce firebasu -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script> <!-- nacte databazi -->
+
+
 <script>
-
-    // Import the functions you need from the SDKs you need
-    import {initializeApp} from "firebase/app";
-    import {getAnalytics} from "firebase/analytics";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    // konfigurator
     const firebaseConfig = {
         apiKey: "AIzaSyDzyD7qi4yI0r9MyYB_pA3O-MZcZXYlbO4",
         authDomain: "cafecheck-b4e73.firebaseapp.com",
-        databaseURL: "https://cafecheck-b4e73-default-rtdb.europe-west1.firebasedatabase.app",
         projectId: "cafecheck-b4e73",
-        storageBucket: "cafecheck-b4e73.firebasestorage.app",
+        storageBucket: "cafecheck-b4e73.appspot.com",
         messagingSenderId: "879583648262",
         appId: "1:879583648262:web:9fe99d3a476c79f4d5c187",
         measurementId: "G-LTN7L59CXW"
     };
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+    // inicializace
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
 
-    // posilani do firestoru
+    // odesilani do firestru
     document.getElementById("feedbackForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Zabráníme výchozímu odeslání formuláře
+        event.preventDefault();
 
-        // ziskane hodnoty
+        // hodnoty
         const name = document.getElementById("feedback_name").value;
         const email = document.getElementById("feedback_mail").value;
         const message = document.getElementById("feedback").value;
 
-        // zpetna vazba
-        firebase.addDoc(firebase.collection(db, "feedback"), {
+        db.collection("feedback").add({
             name: name,
             email: email,
             message: message,
-            timestamp: firebase.serverTimestamp() // Získáme timestamp (čas odeslání)
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
         })
             .then(() => {
-                alert("Děkujeme za zpětnou vazbu!"); // Upozornění uživatele
-                document.getElementById("feedbackForm").reset(); // Reset formuláře
+                alert("Děkujeme za zpětnou vazbu!");                // alert za vyplneni
+                document.getElementById("feedbackForm").reset();    // reset formulare
             })
             .catch((error) => {
-                console.error("Chyba při ukládání: ", error); // Chybová hláška v konzoli
+                console.error("Chyba při ukládání:", error);        // chyba alert
                 alert("Nastala chyba při odesílání zpětné vazby.");
             });
     });
-
 </script>
--->
+
+
 </body>
 </html>
