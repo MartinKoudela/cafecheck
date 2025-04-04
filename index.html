@@ -529,50 +529,5 @@
 
 <script type="module" src=js/bootstrap.bundle.js></script>
 
-<!-- novejsi verze ktera mně nefunguje
-<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
-
-        starsi verze
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>  nacte fce firebasu
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>  nacte databazi
-
-
-<script>
-    // konfigurator
-    const firebaseConfig = {
-        apiKey: "AIzaSyDzyD7qi4yI0r9MyYB_pA3O-MZcZXYlbO4",
-        authDomain: "cafecheck-b4e73.firebaseapp.com",
-        projectId: "cafecheck-b4e73",
-        storageBucket: "cafecheck-b4e73.appspot.com",
-        messagingSenderId: "879583648262",
-        appId: "1:879583648262:web:9fe99d3a476c79f4d5c187",
-        measurementId: "G-LTN7L59CXW"
-    };
-
-    // inicializace
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
-
-    // odesilani do firestru
-    document.getElementById("feedbackForm").addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        // hodnoty
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("mail").value;
-        const message = document.getElementById("message").value;
-
-        db.collection("message").add({
-            name: name,
-            email: email,
-            message: message,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp()
-        })
-
-    });
-</script>
--->
-
 </body>
 </html>
