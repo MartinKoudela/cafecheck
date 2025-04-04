@@ -49,7 +49,7 @@
         </div>
     </div>
 </nav>
-<section id="cards" class="mt-5 mx-auto min-vh-100" style="background-color: #ccad8f;">
+<section id="cards" class="mt-5 mx-auto min-vh-100 text-center" style="background-color: #ccad8f;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="text-center mx-auto">
@@ -60,44 +60,55 @@
                 </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-                <div class="card mx-auto" style="width: 300px; background-color: #70573b; border-color: #000000;">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+                <div class="card mx-auto hidden" style="background-color: #70573b; border-color: #000000;">
                     <a href="ratings.html#zlin" class="text-decoration-none">
-                        <img src="imgs/zlín.jpg" class="card-img-top" alt="Zlín">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: #ccad8f;">Zlín</h5>
+                        <div class="scaling-div">
+                            <img src="imgs/zlín.jpg" class="card-img-top" alt="Zlín">
+                        </div>
+                        <div class="card-body py-0">
+                            <h5 class="card-title fs-1 hidden" style="color: #ccad8f;">Zlín</h5>
                         </div>
                     </a>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-                <div class="card mx-auto" style="width: 300px; background-color: #70573b; border-color: #000000;">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+                <div class="card mx-auto hidden" style="background-color: #70573b; border-color: #000000;">
                     <a href="ratings.html#luha" class="text-decoration-none">
-                        <img src="imgs/luha.jpg" class="card-img-top" alt="Luhačovice">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: #ccad8f;">Luhačovice</h5>
+                        <div class="scaling-div">
+                            <img src="imgs/luha.jpg" class="card-img-top" alt="Luhačovice">
+                        </div>
+
+                        <div class="card-body py-0">
+                            <h5 class="card-title fs-1" style="color: #ccad8f;">Luhačovice</h5>
                         </div>
                     </a>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-                <div class="card mx-auto" style="width: 300px; background-color: #70573b; border-color: #000000;">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+                <div class="card mx-auto hidden" style="background-color: #70573b; border-color: #000000;">
                     <a href="ratings.html#slav" class="text-decoration-none">
-                        <img src="imgs/slavicin.jpg" class="card-img-top" alt="Slavičín">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: #ccad8f;">Slavičín</h5>
+                        <div class="scaling-div">
+                            <img src="imgs/slavicin.jpg" class="card-img-top" alt="Slavičín">
+                        </div>
+
+                        <div class="card-body py-0">
+                            <h5 class="card-title fs-1" style="color: #ccad8f;">Slavičín</h5>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                <div class="card mx-auto" style="width: 300px; background-color: #70573b; border-color: #000000;">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-5 mb-5">
+                <div class="card mx-auto hidden" style="background-color: #70573b; border-color: #000000;">
                     <a href="ratings.html#bojko" class="text-decoration-none">
-                        <img src="imgs/bojko.jpg" class="card-img-top" alt="Bojkovice">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color: #ccad8f;">Bojkovice</h5>
+                        <div class="scaling-div">
+                            <img src="imgs/bojko.jpg" class="card-img-top" alt="Bojkovice">
+                        </div>
+
+                        <div class="card-body py-0">
+                            <h5 class="card-title fs-1" style="color: #ccad8f;">Bojkovice</h5>
                         </div>
                     </a>
                 </div>
@@ -143,10 +154,13 @@
         transition: color 0.3s ease-in-out;
     }
 
-    .card:hover {
-        transform: scale(1.1);
-        transition: ease-in-out 0.3s;
-    }
+    /*
+        .card:hover {
+            transform: scale(1.1);
+            transition: ease-in-out 0.3s;
+        }
+     */
+
 
     .nav-link:hover {
         color: #ffcc99 !important;
@@ -163,16 +177,35 @@
 
     }
 
-    #cards:has(.card:hover) .card:not(:hover) {
-        filter: blur(2px);
-        transition: filter 0.3s ease;
+    .scaling-div {
+        overflow: hidden;
     }
 
-    #cards:has(.card:hover) {
-        filter: none;
+    .scaling-div img {
+        transition: transform 0.3s ease-in-out;
+        width: 100%;
+        height: auto;
+    }
+
+    .scaling-div:hover img {
+        transform: scale(1.1);
+    }
+
+    /* animation */
+    .hidden {
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
     }
 </style>
 
 <script type="module" src=js/bootstrap.bundle.js></script>
+<script src="script.js"></script>
+
 </body>
 </html>
