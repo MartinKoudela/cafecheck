@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="cz">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -34,7 +34,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="cafes.html" class="nav-link custom-border" style="color: #ccad8f">KAVÁRNY</a>
+                    <a href="ratings.html" class="nav-link custom-border" style="color: #ccad8f">KAVÁRNY</a>
                 </li>
 
                 <li class="nav-item">
@@ -44,160 +44,146 @@
                 <li class="nav-item">
                     <a href="gallery.html" class="nav-link custom-border" style="color: #ccad8f">MÁ GALERIE</a>
                 </li>
-
             </ul>
         </div>
     </div>
 </nav>
 
-<section id="cafes" class="mt-5 min-vh-100" style="background-color: #ccad8f;">
+<section id="cafes" class="mt-5 cafes_list" style="background-color: #ccad8f">
     <div class="container">
-        <div class="row">
-            <div class="text-center mx-auto">
+        <div class="row text-center">
+            <div>
                 <h1 class="mt-5 pt-5 display-1 hidden" style="font-family: Impact; color: #2d261f;">Recenze</h1>
                 <p class="fw-bold display-5 hidden" style="font-family: Noteworthy; color: #2d261f;">Vyberte kavárnu</p>
             </div>
-            <h1 class="display-3 fw-bold mt-5 mb-5 hidden" id="zlin" style="font-family: Impact; color: #2d261f;">
-                Zlín</h1>
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                <div class="card mx-auto text-center text-center hidden"
-                     style="background-color: #ccad8f; border: 0">
-                    <a href="kavarna_tovarna.html" class="text-decoration-none">
-                        <div class="scaling-div">
-                            <img src="imgs/kavarna_tovarna.jpg" class="card-img-top" alt="Kavárna Továrna">
-                        </div>
+            <div class="d-flex flex-column flex-md-row gap-3 mt-5 pt-5 filter">
+                <select id="cityFilter" class="form-select w-auto fw-bold"
+                        style="font-family: Noteworthy; color: #ccad8f; background-color: #70573b; border-color: #2d261f">
+                    <option value="all">Všechna města</option>
+                    <option value="zlin">Zlín</option>
+                    <option value="luha">Luhačovice</option>
+                    <option value="slav">Slavičín</option>
+                    <option value="bojko">Bojkovice</option>
+                </select>
 
-                        <div class="card-body">
-                            <h1 class="card-title" style="font-family:  Helvetica Neue; color: #2d261f;">Kavárna
-                                Továrna</h1>
-                        </div>
-                    </a>
-                </div>
+                <select id="sorter" class="form-select w-auto fw-bold"
+                        style="font-family: Noteworthy; color: #ccad8f; background-color: #70573b; border-color: #2d261f">
+                    <option value="rating-desc">Nejlépe hodnocené</option>
+                    <option value="rating-asc">Nejhůře hodnocené</option>
+                    <option value="price-asc">Od nejlevnějších</option>
+                    <option value="price-desc">Od nejdražších</option>
+                    <option value="popularity-desc">Od nejnavštěvovanějších</option>
+                </select>
             </div>
+            <div class="cards">
+                <div class="col-lg-1 col-md-1  kavarna_tovarna zlin">
+                    <div class="card mx-auto text-center hidden w-50"
+                         style="background-color: #ccad8f; border: 0">
+                        <a href="kavarna_tovarna.html" class="text-decoration-none">
+                            <div class="scaling-div">
+                                <img src="imgs/kavarna_tovarna.jpg" class="card-img-top" alt="Kavárna Továrna">
+                            </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                <div class="card mx-auto text-center hidden" style="background-color: #ccad8f; border: 0">
-                    <a href="kafe_na_rohu.html" class="text-decoration-none">
-                        <div class="scaling-div">
-                            <img src="imgs/kafe-narohu%202.jpg" class="card-img-top" alt="Kafe na Rohu">
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Kafe Na
-                                Rohu</h1>
-                        </div>
-                    </a>
+                            <div class="card-body">
+                                <h1 class="card-title" style="font-family:  Helvetica Neue; color: #2d261f;">Kavárna Továrna</h1>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                <div class="card mx-auto text-center hidden" style="background-color: #ccad8f; border: 0">
-                    <a href="laskavarna.html" class="text-decoration-none">
-                        <div class="scaling-div">
+                <div class="col-lg-1 col-md-1  mt-3 kafe_na_rohu zlin">
+                    <div class="card mx-auto text-center hidden w-50" style="background-color: #ccad8f; border: 0">
+                        <a href="kafe_na_rohu.html" class="text-decoration-none">
+                            <div class="scaling-div">
+                                <img src="imgs/kafe-narohu%202.jpg" class="card-img-top" alt="Kafe na Rohu">
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title" style="font-family:  Helvetica Neue; color: #2d261f;">Kafe Na Rohu</h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
-                            <img src="imgs/laskavarna.jpg" class="card-img-top" alt="Láskavárna">
-                        </div>
+                <div class="col-lg-1 col-md-1   mt-3 laskavarna zlin">
+                    <div class="card mx-auto text-center hidden w-50" style="background-color: #ccad8f; border: 0">
+                        <a href="laskavarna.html" class="text-decoration-none">
+                            <div class="scaling-div">
 
-                        <div class="card-body">
-                            <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">
-                                Láskavárna</h1>
-                        </div>
-                    </a>
-                </div>
-            </div>
+                                <img src="imgs/laskavarna.jpg" class="card-img-top" alt="Láskavárna">
+                            </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                <div class="card mx-auto text-center hidden" style="background-color: #ccad8f; border: 0">
-                    <a href="kafö.html" class="text-decoration-none">
-                        <div class="scaling-div">
-                            <img src="imgs/kafo.jpg" class="card-img-top" alt="Kafö">
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Kafö</h1>
-                        </div>
-                    </a>
+                            <div class="card-body">
+                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Láskavárna</h1>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                <div class="card mx-auto text-center hidden" style="background-color: #ccad8f; border: 0">
-                    <a href="kookie.html" class="text-decoration-none">
-                        <div class="scaling-div">
-                            <img src="imgs/kookie.jpg" class="card-img-top" alt="Kookie By Nikol">
-                        </div>
 
-                        <div class="card-body">
-                            <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Kookie By
-                                Nikol</h1>
-                        </div>
-                    </a>
+                <div class="col-lg-1 col-md-1   mt-5 mb-5 kafo zlin">
+                    <div class="card mx-auto text-center hidden w-50" style="background-color: #ccad8f; border: 0">
+                        <a href="kafö.html" class="text-decoration-none">
+                            <div class="scaling-div">
+                                <img src="imgs/kafo.jpg" class="card-img-top" alt="Kafö">
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Kafö</h1>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                <div class="card mx-auto text-center hidden" style="background-color: #ccad8f; border: 0">
-                    <a href="park_cafe.html" class="text-decoration-none">
-                        <div class="scaling-div">
-                            <img src="imgs/park_cafe.jpg" class="card-img-top" alt="Park Café">
-                        </div>
+                <div class="col-lg-1 col-md-1   mt-5 mb-5 kookie zlin">
+                    <div class="card mx-auto text-center hidden w-50" style="background-color: #ccad8f; border: 0">
+                        <a href="kookie.html" class="text-decoration-none">
+                            <div class="scaling-div">
+                                <img src="imgs/kookie.jpg" class="card-img-top" alt="Kookie By Nikol">
+                            </div>
 
-                        <div class="card-body">
-                            <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Park
-                                Café</h1>
-                        </div>
-                    </a>
+                            <div class="card-body">
+                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Kookie By Nikol</h1>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <h1 class="display-3 fw-bold mt-5 mb-5 hidden" id="luha" style="font-family: Impact; color: #2d261f;">
-                Luhačovice</h1>
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                <div class="card mx-auto text-center hidden" style="background-color: #ccad8f; border: 0">
-                    <a href="myslivna.html" class="text-decoration-none">
-                        <div class="scaling-div">
-                            <img src="imgs/luhakavarna.jpg" class="card-img-top" alt="Kavárna v Myslivně">
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Kavárna v
-                                Myslivně</h1>
-                        </div>
-                    </a>
+                <div class="col-lg-1 col-md-1   mt-5 mb-5 luhakavarna luha">
+                    <div class="card mx-auto text-center hidden w-50" style="background-color: #ccad8f; border: 0">
+                        <a href="myslivna.html" class="text-decoration-none">
+                            <div class="scaling-div">
+                                <img src="imgs/luhakavarna.jpg" class="card-img-top" alt="Kavárna v Myslivně">
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Kavárna v Myslivně</h1>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <h1 class="display-3 fw-bold mt-5 mb-5 hidden" id="slav" style="font-family: Impact; color: #2d261f;">
-                Slavičín</h1>
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                <div class="card mx-auto text-center hidden" style="background-color: #ccad8f; border: 0">
-                    <a href="prostor.html" class="text-decoration-none">
-                        <div class="scaling-div">
-                            <img src="imgs/prostor.jpg" class="card-img-top" alt="Prostor">
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Prostor</h1>
-                        </div>
-                    </a>
+                <div class="col-lg-1 col-md-1  mt-5 mb-5 prostor slav">
+                    <div class="card mx-auto text-center hidden w-50" style="background-color: #ccad8f; border: 0">
+                        <a href="prostor.html" class="text-decoration-none">
+                            <div class="scaling-div">
+                                <img src="imgs/prostor.jpg" class="card-img-top" alt="Prostor">
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Prostor</h1>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <h1 class="display-3 fw-bold mt-5 mb-5 hidden" id="bojko" style="font-family: Impact; color: #2d261f;">
-                Bojkovice</h1>
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                <div class="card mx-auto text-center hidden" style="background-color: #ccad8f; border: 0">
-                    <a href="nova_lucerna.html" class="text-decoration-none">
-                        <div class="scaling-div">
-                            <img src="imgs/nova_lucerna.jpg" class="card-img-top" alt="Nová Lucerna">
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Nová
-                                Lucerna</h1>
-                        </div>
-                    </a>
+                <div class="col-lg-1 col-md-1 mt-5 mb-5 nova_lucerna bojko">
+                    <div class="card mx-auto text-center hidden w-50" style="background-color: #ccad8f; border: 0">
+                        <a href="nova_lucerna.html" class="text-decoration-none">
+                            <div class="scaling-div">
+                                <img src="imgs/nova_lucerna.jpg" class="card-img-top" alt="Nová Lucerna">
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Nová Lucerna</h1>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<!--Nefunkční responsivita
-<div class="row justify-content-end align-items-end">
-    <img src="imgs/setup_coffees.png" class="img-fluid position-relative" style="width: 600px;">
-</div>-->
-
 
 <footer class="py-3 text-center" style="background-color: #70573b;">
     <div class="container">
@@ -214,9 +200,7 @@
                    style="color: #ccad8f;"></i>
             </a>
         </div>
-
     </div>
-
 </footer>
 <style>
 
@@ -224,6 +208,16 @@
         .custom-border {
             border-bottom: 2px solid black;
         }
+    }
+
+    @media (max-width: 767px) {
+        .card {
+            width: 100% !important;
+        }
+        select {
+            text-align: center !important;
+        }
+
     }
 
     .nav-link:hover {
@@ -250,6 +244,7 @@
     .scaling-div:hover img {
         transform: scale(1.1);
     }
+
     /* animation */
     .hidden {
         opacity: 0;
@@ -262,10 +257,23 @@
         transform: translateX(0);
     }
 
+    .card {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .card.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
 </style>
+
 <script type="module" src=js/bootstrap.bundle.js></script>
 <script src="script.js"></script>
-
+<script type="text/javascript" src="sorting.js"></script>
 
 
 </body>
