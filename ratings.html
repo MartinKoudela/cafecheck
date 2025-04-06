@@ -85,7 +85,8 @@
                             </div>
 
                             <div class="card-body">
-                                <h1 class="card-title" style="font-family:  Helvetica Neue; color: #2d261f;">Kavárna Továrna</h1>
+                                <h1 class="card-title" style="font-family:  Helvetica Neue; color: #2d261f;">Kavárna
+                                    Továrna</h1>
                             </div>
                         </a>
                     </div>
@@ -98,7 +99,8 @@
                                 <img src="imgs/kafe-narohu%202.jpg" class="card-img-top" alt="Kafe na Rohu">
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title" style="font-family:  Helvetica Neue; color: #2d261f;">Kafe Na Rohu</h1>
+                                <h1 class="card-title" style="font-family:  Helvetica Neue; color: #2d261f;">Kafe Na
+                                    Rohu</h1>
                             </div>
                         </a>
                     </div>
@@ -113,7 +115,8 @@
                             </div>
 
                             <div class="card-body">
-                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Láskavárna</h1>
+                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">
+                                    Láskavárna</h1>
                             </div>
                         </a>
                     </div>
@@ -138,7 +141,8 @@
                                 <img src="imgs/marco_polo.jpg" class="card-img-top" alt="Marco Polo">
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Marco Polo</h1>
+                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Marco
+                                    Polo</h1>
                             </div>
                         </a>
                     </div>
@@ -151,7 +155,8 @@
                             </div>
 
                             <div class="card-body">
-                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Kookie By Nikol</h1>
+                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Kookie By
+                                    Nikol</h1>
                             </div>
                         </a>
                     </div>
@@ -163,7 +168,8 @@
                                 <img src="imgs/luhakavarna.jpg" class="card-img-top" alt="Kavárna v Myslivně">
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Kavárna v Myslivně</h1>
+                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Kavárna v
+                                    Myslivně</h1>
                             </div>
                         </a>
                     </div>
@@ -175,7 +181,8 @@
                                 <img src="imgs/prostor.jpg" class="card-img-top" alt="Prostor">
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Prostor</h1>
+                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">
+                                    Prostor</h1>
                             </div>
                         </a>
                     </div>
@@ -187,7 +194,8 @@
                                 <img src="imgs/nova_lucerna.jpg" class="card-img-top" alt="Nová Lucerna">
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Nová Lucerna</h1>
+                                <h1 class="card-title " style="font-family:  Helvetica Neue; color: #2d261f;">Nová
+                                    Lucerna</h1>
                             </div>
                         </a>
                     </div>
@@ -224,7 +232,7 @@
                    style="color: #ccad8f;"></i>
             </a>
             <div class="w-100 d-flex justify-content-end align-items-start">
-                <a href="https://www.buymeacoffee.com/martinkoudela"><img class="donate" src="https://img.buymeacoffee.com/button-api/?
+                <a href="https://www.buymeacoffee.com/martinkoudela"><img class="donate2" src="https://img.buymeacoffee.com/button-api/?
                 text=Buy me a coffee&emoji=&slug=martinkoudela&button_colour=ccad8f&font_colour=000000&font_family=Cookie
                 &outline_colour=000000&coffee_colour=FFDD00"/></a>
             </div>
@@ -245,6 +253,7 @@
         .card {
             width: 100% !important;
         }
+
         select {
             text-align: center !important;
         }
@@ -260,15 +269,26 @@
     .logo:hover {
         color: #ffcc99 !important;
     }
-    /* Buy me a coffee size and hover */
-    .donate{
-        transform: scale(1.3);
-    }
-    .donate:hover {
-        transform: scale(1.5);
-        transition: 0.5s ease;
-        cursor: pointer;
 
+    /* Buy me a coffee size and hover */
+    @media (max-width: 544px) {
+        .donate2 {
+            display: none;
+        }
+    }
+
+    @media (min-width: 783px) {
+
+        .donate2 {
+            transform: scale(1.3);
+        }
+
+        .donate2:hover {
+            transform: scale(1.5);
+            transition: 0.5s ease;
+            cursor: pointer;
+
+        }
     }
 
     .scaling-div {
