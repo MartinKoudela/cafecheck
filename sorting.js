@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'Kavárna v Myslivně': 8,
             'Prostor': 7,
             'Nová Lucerna': 3,
+            'Marco Polo': 5
         };
         return prices[name] || 100;
     }
@@ -84,6 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'Kavárna v Myslivně': 3,
             'Prostor': 3.5,
             'Nová Lucerna': 2.5,
+            'Marco Polo': 3.4
+
         };
         return ratings[name] || 4.0;
     }
@@ -95,9 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
             'Láskavárna': 6,
             'Kafö': 7,
             'Kookie By Nikol': 8,
-            'Kavárna v Myslivně': 5,
+            'Kavárna v Myslivně': 5.2,
             'Prostor': 4,
             'Nová Lucerna': 3,
+            'Marco Polo': 5
+
         };
         return pops[name] || 100;
     }
@@ -112,6 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'Kavárna v Myslivně' : 'luha',
             'Prostor': 'slav',
             'Nová Lucerna': 'bojko',
+            'Marco Polo': 'luha'
+
         };
         return cities[name] || 'zlin';
     }

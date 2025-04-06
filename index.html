@@ -211,6 +211,18 @@
                             <p class="sm-text fs-4">Luhačovice - Kolonáda </p>
                         </div>
                     </div>
+
+                    <div class="carousel-item">
+                        <a>
+                            <img src="imgs/marco_polo.jpg" class="d-block w-50 mx-auto"
+                                 alt="Kavárna - Marco Polo">
+                        </a>
+                        <div class="carousel-caption d-block">
+                            <p class="sm-text fs-1  fw-bold  d-inline">
+                                Marco Polo</p>
+                            <p class="sm-text fs-4">Luhačovice - Kolonáda </p>
+                        </div>
+                    </div>
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#cafeCarousel"
@@ -263,6 +275,11 @@
                          data-bs-target="#cafeCarousel"
                          data-bs-slide-to="7">
                 </div>
+                <div class="col-auto">
+                    <img src="imgs/marco_polo.jpg" class="thumbnail-img d-none d-md-block"
+                         data-bs-target="#cafeCarousel"
+                         data-bs-slide-to="8">
+                </div>
             </div>
         </div>
     </div>
@@ -297,6 +314,11 @@
                 na tom
                 baví nejvíce.
             </p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mb-5 pb-5 hidden">
+            <a href="https://www.buymeacoffee.com/martinkoudela"><img class="donate" src="https://img.buymeacoffee.com/button-api/?text=Buy
+         me a coffee&emoji=☕&slug=martinkoudela&button_colour=70573b&font_colour=ffffff&font_family=Cookie&outline_colou
+         r=ffffff&coffee_colour=FFDD00"/></a>
         </div>
     </div>
 </section>
@@ -381,10 +403,11 @@
     <img src="imgs/coffee.png" class="img-fluid float-end mt-5 hidden" alt="Responsive image">
 </section>
 
-<section style="background-color: #ccad8f;">
+<section style="background-color: #ccad8f" class="form-section">
     <div class="container">
         <div class="row pb-5">
-            <h1 class="mb-1 hidden" style="font-family: Impact; color: #2d261f">Chcete mi doporučit kavárnu a nebo zaslat
+            <h1 class="mb-1 hidden" style="font-family: Impact; color: #2d261f">Chcete mi doporučit kavárnu a nebo
+                zaslat
                 zpětnou vazbu?</h1>
             <h3 class="hidden">Vyplňtě formulář a třeba vám vaše přání splním.</h3>
             <form id="feedbackForm" class="mb-5 hidden" action="#" method="POST">
@@ -398,7 +421,8 @@
 
                     <div class="mb-3 mx-5">
                         <label for="email" class="form-label">Váš Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="jan.novak@email.com"
+                        <input type="email" class="form-control" id="email" name="email"
+                               placeholder="jan.novak@email.com"
                                required
                                style="background-color: #70573b; border-color: #000000; color: #ccad8f;">
                     </div>
@@ -424,24 +448,39 @@
 </section>
 
 
-<footer class="py-3 text-center" style="background-color: #70573b;">
+<footer class="py-3 text-center hidden" style="background-color: #70573b;">
     <div class="container">
         <p style="color: #ccad8f"> &copy; 2025 all right reserved by Martin Koudela</p>
         <h3 class="text-start" style="color: #ccad8f; font-family: Helvetica Neue">Kontakty:</h3>
-        <div class="d-flex flex-direction-row gap-4">
+        <div class="d-flex flex-direction-row gap-2">
             <a href="mailto:cafecheck.info@gmail.com" style="text-decoration: none">
                 <i class="bi bi-envelope-fill d-flex align-items-start justify-content-start display-1 text-decoration-none logo"
                    style="color: #ccad8f;"></i>
             </a>
-            <a href="https://www.instagram.com/swa666rrass?igsh=bzJ0Y2F4YzI3cGox&utm_source=qr"
+            <a href="https://www.instagram.com/koudy_martin?igsh=bzJ0Y2F4YzI3cGox&utm_source=qr"
                style="text-decoration: none">
                 <i class="bi bi-instagram d-flex align-items-start justify-content-start display-1 text-decoration-none logo"
                    style="color: #ccad8f;"></i>
             </a>
+            <a href="https://www.facebook.com/share/1H6DStWPiD/?mibextid=wwXIfr" style="text-decoration: none">
+                <i class="bi bi-facebook d-flex align-items-start justify-content-start display-1 text-decoration-none logo"
+                   style="color: #ccad8f;"></i>
+            </a>
+            <a href="https://x.com/martinkoudy" style="text-decoration: none">
+                <i class="bi bi-twitter d-flex align-items-start justify-content-start display-1 text-decoration-none logo"
+                   style="color: #ccad8f;"></i>
+            </a>
+            <a href="https://github.com/MartinKoudela" style="text-decoration: none">
+                <i class="bi bi-github d-flex align-items-start justify-content-start display-1 text-decoration-none logo"
+                   style="color: #ccad8f;"></i>
+            </a>
+            <div class="w-100 d-flex justify-content-end align-items-start">
+                <a href="https://www.buymeacoffee.com/martinkoudela"><img class="donate2" src="https://img.buymeacoffee.com/button-api/?
+                text=Buy me a coffee&emoji=&slug=martinkoudela&button_colour=ccad8f&font_colour=000000&font_family=Cookie
+                &outline_colour=000000&coffee_colour=FFDD00"/></a>
+            </div>
         </div>
-
     </div>
-
 </footer>
 
 
@@ -456,6 +495,53 @@
     @media (max-width: 559px) {
         font-size: 10px; !important;
     }
+
+    @media (min-width: 992px) and (max-width: 1420px) {
+        #img {
+            display: none;
+        }
+
+        .form-section {
+            padding-top: 100px;
+        }
+
+    }
+
+    /* Buy me a coffee size and hover */
+    @media (min-width: 430px) {
+
+        .donate {
+            transform: scale(1.8);
+        }
+
+        .donate:hover {
+            transform: scale(2);
+            transition: 0.5s ease;
+            cursor: pointer;
+
+        }
+    }
+
+    @media (max-width: 544px) {
+        .donate2 {
+            display: none;
+        }
+    }
+
+    @media (min-width: 783px) {
+
+        .donate2 {
+            transform: scale(1.3);
+        }
+
+        .donate2:hover {
+            transform: scale(1.5);
+            transition: 0.5s ease;
+            cursor: pointer;
+
+        }
+    }
+
 
     .nav-link:hover {
         color: #ffcc99 !important;
@@ -513,7 +599,8 @@
     .logo:hover {
         color: #ffcc99 !important;
     }
-/* animation */
+
+    /* animation */
     .hidden {
         opacity: 0;
         transition: all 1.5s;
