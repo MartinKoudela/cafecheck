@@ -60,7 +60,7 @@
 
                 <p class="fs-5 hidden" style="font-family: 'Helvetica Neue'; color:#2d261f">
                     - Kavárna Továrna je jedna z mých nejoblíbenějších. Myslím si, že je možná i nejlepší ve Zlíně.
-                    Působí velmi luxusně a elegantně . Má krásný moderní interiér, který perfektně zapadá do Baťovské
+                    Působí velmi luxusně a elegantně. Má krásný moderní interiér, který perfektně zapadá do Baťovské
                     architektury, pohodlné sezení a příjemnou atmosféru.
                     Je mi tam vždy moc příjemně a kvůli fakt velkému prostoru kavárny se necítím vubec utlačován i s
                     plnou kavárnou lidí. Mají obrovskou nabídku jak káv, tak i skvělých dezertů a lehkých jídel, které
@@ -72,9 +72,13 @@
                 <br>
                 <h3 class="fs-2 hidden" style="font-family: Impact; color:#2d261f">Káva a občerstvení:</h3>
                 <p class="fs-5 hidden" style="font-family: 'Helvetica Neue'; color:#2d261f">
-                    - Nabízí prvotřídní kávu a lahodné dezerty, které jsou připravené s velkou péčí. Káva je opravdu
-                    skvělá,
-                    vážně nemá chybu.
+                    - Káva je opravdu PRVOTŘÍDNÍ, vážně nemá chybu. Jsem rád, že v nabídce mají i filtrovanou kávu.
+                    Když jsem si ji objednal přinesli mi ji v takové konvičce. Její chuť mě příjemně oslovila. Tím tedy
+                    chci říct, že byla moc dobrá, stejně jako jejich ostatní kávy.
+                    <br>- Dortíky a dezerty mají dokonalé, mývají moc druhů dortů a dezertů, které jsou nezapomenutelné.
+                    Třeba karamelový dort nebo jablečný koláč jsou fakt kvělý. Nejsem si jist jestli dávají nějaké větší
+                    jídla, ale rozhodně mají lehká jídla, které jsou vynikající. Například avokádový chleba, který jsem
+                    si u nich dal, byl asi nejlepší co jsem kdy kde měl.
                 </p>
                 <br>
                 <h3 class="fs-2 hidden" style="font-family: Impact; color:#2d261f">Prostor:</h3>
@@ -89,9 +93,9 @@
                 <h3 class="fs-2 hidden" style="font-family: Impact; color:#2d261f">Obsluha:</h3>
                 <p class="fs-5 hidden" style="font-family: 'Helvetica Neue'; color:#2d261f">
                     - To nejlepší na celé kavárně je ta obsluha, hnedka jak příjdete dostanete pohárek vody jen tak na
-                    uvítanou, a to moc často nevídám, aspoň ne v kavárnách, které jsem navštívil. Obsluha je moc milá a
-                    myslím si, že bez ní by to nebylo ono. Obsluha si s váma ráda popovída a vždy nahodí nějaký small
-                    talk.
+                    uvítanou, a to moc často nevídám, aspoň ne v kavárnách, které jsem navštívil.
+                    <br>- Obsluha je moc milá a myslím si, že bez ní by to nebylo ono. Ráda si s vámi popovídají
+                    a vždy nahodí nějaký small talk.
                 </p>
                 <br>
                 <h3 class="fs-2 hidden" style="font-family: Impact; color:#2d261f">Cena:</h3>
@@ -263,10 +267,19 @@
     }
 
     /* Hover gallery */
+    .gallery img {
+        transition: transform 0.5s ease;
+    }
+
     .gallery img:hover {
         transform: scale(2);
-        transition: 0.5s ease;
     }
+
+    .gallery .col-lg-4:hover {
+        z-index: 10;
+    }
+
+
 
     @media (max-width: 997px) {
 
