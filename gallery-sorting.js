@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
             'Kavárna Továrna': 'tovarna',
             'Kafe Na Rohu': 'naRohu',
             'Láskavárna': 'laskavarna',
-            'Kafö': 'kafo',
             'Prostor': 'prostor',
             'Nová Lucerna': 'lucerna',
             'Kavárna v Myslivně': 'myslivna',
