@@ -14,7 +14,7 @@ function getMail(){
 
 
         .then(() => {
-            alert("Děkujeme za zpětnou vazbu, byl vám zaslán email!");                // alert za vyplneni
+            alert("Děkuji za zpětnou vazbu, byl vám zaslán email!");                // alert za vyplneni
             document.getElementById("feedbackForm").reset();    // reset formulare
         })
         .catch((error) => {
