@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
             'Kavárna Továrna': 10,
             'Kafe Na Rohu': 5,
             'Láskavárna': 4,
-            'Kafö': 6,
+            'Kafö': 7,
             'Kookie By Nikol': 9,
             'Kavárna v Myslivně': 8,
-            'Prostor': 7,
+            'Prostor': 6,
             'Nová Lucerna': 3,
             'Marco Polo': 5
         };
