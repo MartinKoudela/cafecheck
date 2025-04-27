@@ -1,4 +1,4 @@
-=# CAFECHECK
+# CAFECHECK
 
 ## Popis:
 Recenze kaváren ve Zlíně a okolí mým pohledem s mýmy autentickými názory.
