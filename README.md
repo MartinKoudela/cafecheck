@@ -5,25 +5,25 @@ Recenze kaváren ve Zlíně a okolí mým pohledem s mýmy autentickými názory
 
 Tento web není a nebude výdělečně činný!
 
-## Vysvětlivky
+## 🔎Vysvětlivky
 
-### Formulář zpětné vazby -
+### 💌Formulář zpětné vazby -
 Uživatel musí zadat všechny vyžadované a pravé informace, poté mu bude zaslán email.
 
-### Buy me a coffee - 
+### ❤️Buy me a coffee - 
 Uživatel mě může podpořit. Přes tlačítko buy me a coffee bude přesměrován na web  [Buy Me a Coffee](buymeacoffee.com/martinkoudela).
 
-### Filtry kaváren a fotek - 
+### 🧹Filtry kaváren a fotek - 
 Uživatel může filtrovat kavárny podle města a dalších specifikací a fotky v galerii podle kaváren kde byli vyfoceny.
 
-## Požité technologie:
+## 🛠️Požité technologie:
 - HTML
 - CSS
 - SCSS
 - Bootstrap
 - Javascript
 
-## Autor:
+## ✍️Autor:
 
 Martin Koudela
 
