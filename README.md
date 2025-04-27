@@ -1,4 +1,4 @@
-# CAFECHECK
+=# CAFECHECK
 
 ## Popis:
 Recenze kaváren ve Zlíně a okolí mým pohledem s mýmy autentickými názory.
@@ -19,8 +19,9 @@ Uživatel může filtrovat kavárny podle města a dalších specifikací a fotk
 ## Požité technologie:
 - HTML
 - CSS
-- Javascript
 - SCSS
+- Bootstrap
+- Javascript
 
 ## Autor:
 
@@ -28,6 +29,6 @@ Martin Koudela
 
 [koudela.m@icloud.com](mailto:koudela.m@icloud.com)
 
-[instagram koudy_martin](https://www.instagram.com/koudy_martin?igsh=bzJ0Y2F4YzI3cGox&utm_source=qr)
+[Instagram koudy_martin](https://www.instagram.com/koudy_martin?igsh=bzJ0Y2F4YzI3cGox&utm_source=qr)
 
 [Linkedin Martin Koudela](https://www.linkedin.com/in/martin-koudela-a5b645343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
